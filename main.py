@@ -38,7 +38,7 @@ def checkcounter():
 for c in comments:
     if c.id not in comments_replied_to:
         if checkcondition(c):
-            c.reply("Mr. Stark come on, it's Spider-Man, this must have been the " + str(checkcounter()) + " time by now :/ \n\n I'm a bot created by u/tigerater to correct the lack of hyphens found in Spider-Man! I'll only be up in for a few days but please pm my owner if you have any questions!")
+            c.reply("Mr. Stark come on, it's Spider-Man, this must have been the " + str(checkcounter()) + " time by now :/ I'm not the Spiderling, the Crimefighting Spider or Spider-boy ;_; \n\n I'm a bot created by u/tigerater to correct the lack of hyphens found in Spider-Man! I'll only be up in for a few days but please pm my owner if you have any questions!")
             comments_replied_to.append(c.id)
     with open("comments_replied_to.txt", "w") as f:
         for comment_id in comments_replied_to:
