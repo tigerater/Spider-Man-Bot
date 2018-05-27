@@ -30,10 +30,10 @@ else:
 def checkcounter():
     with open("counter.txt", "r") as f:
         counter = int(f.read())
-        return(num2words(counter, to='ordinal'))
         counter += 1
     with open("counter.txt", "w") as g:
         g.write(str(counter))
+        return(num2words(counter, to='ordinal'))
        
 for c in comments:
     if c.id not in comments_replied_to:
